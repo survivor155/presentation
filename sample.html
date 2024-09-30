@@ -7,24 +7,20 @@
 </head>
 <body>
     <script>
-        // Create a prompt to ask the user for three numbers
-        let num1 = prompt("Enter the first number:");
-        let num2 = prompt("Enter the second number:");
-        let num3 = prompt("Enter the third number:");
+        
+        let num1 = parseFloat(prompt("Enter the first number:")) || 0;
+        let num2 = parseFloat(prompt("Enter the second number:")) || 0;
+        let num3 = parseFloat(prompt("Enter the third number:")) || 0;
 
-        // Convert the input values to numbers
-        let number1 = parseFloat(num1);
-        let number2 = parseFloat(num2);
-        let number3 = parseFloat(num3);
+        
+        let sum = num1 + num2 + num3;
+        let average = sum / 3;
 
-        // Calculate the sum of the three numbers
-        let sum = number1 + number2 + number3;
 
-        // Create a new HTML paragraph element to display the result
         let resultParagraph = document.createElement("p");
-        resultParagraph.textContent = `The sum of the three numbers is: ${sum}`;
+        resultParagraph.textContent = `The sum of the three numbers is: ${sum}. And the average is: ${average}.`;
 
-        // Add the result paragraph to the HTML body
+       
         document.body.appendChild(resultParagraph);
     </script>
 </body>
