@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Sum</title>
+</head>
+<body>
+    <script>
+        // Create a prompt to ask the user for three numbers
+        let num1 = prompt("Enter the first number:");
+        let num2 = prompt("Enter the second number:");
+        let num3 = prompt("Enter the third number:");
+
+        // Convert the input values to numbers
+        let number1 = parseFloat(num1);
+        let number2 = parseFloat(num2);
+        let number3 = parseFloat(num3);
+
+        // Calculate the sum of the three numbers
+        let sum = number1 + number2 + number3;
+
+        // Create a new HTML paragraph element to display the result
+        let resultParagraph = document.createElement("p");
+        resultParagraph.textContent = `The sum of the three numbers is: ${sum}`;
+
+        // Add the result paragraph to the HTML body
+        document.body.appendChild(resultParagraph);
+    </script>
+</body>
+</html>
